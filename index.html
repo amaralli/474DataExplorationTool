@@ -9,6 +9,9 @@
         <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
+        <!-- Include d3 library-->
+         <script src="http://d3js.org/d3.v3.min.js"></script>
+
         <!-- Include bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -18,19 +21,46 @@
     </head>
     <body class="container">
         <header class="page-header">
-            <h1>TITLE HERE</h1>
+            <h1>Hate Crimes in the United States by Group and Record Type</h1>
         </header>
 
+        <h2>Type of Impacted Group</h2>
         <div class="btn-group" data-toggle="buttons">
           <label class="btn btn-primary">
-            <input value="male" class="sex" type="radio" name="options" id="option1" autocomplete="off">Male
+            <input value="Race" class="biasType" type="radio" name="options" autocomplete="off">Race
           </label>
-          <label class="btn btn-primary active">
-            <input value="female" type="radio" class="sex" name="options" id="option2" autocomplete="off" checked>Female
+          <label class="btn btn-primary">
+            <input value="Religion" class="biasType" type="radio" name="options" autocomplete="off">Religion
+          </label>
+          <label class="btn btn-primary">
+            <input value="Sexual Orientation" class="biasType" type="radio" name="options"  autocomplete="off">Sexual Orientation
+          </label>
+          <label class="btn btn-primary">
+            <input value="Ethnicity" class="biasType" type="radio" name="options" autocomplete="off">Ethnicity
+          </label>
+          <label class="btn btn-primary">
+            <input value="Disability" class="biasType" type="radio" name="options" autocomplete="off">Disability
+          </label>
+          <label class="btn btn-primary">
+            <input value="Sex" class="biasType" type="radio" name="options" autocomplete="off">Sex
+          </label>
+          <label class="btn btn-primary">
+            <input value="Gender Identity" class="biasType" type="radio" name="options"  autocomplete="off">Gender Identity
           </label>
         </div>
 
-        <h2>DATA TITLE HERE</h2>
+        <h2>Type of Record</h2>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-info">
+                <input value="Incidents" class="recordType" type="radio" name="options" autocomplete="off">Incidences
+            </label>
+            <label class="btn btn-info">
+                <input value="Offenses" class="recordType" type="radio" name="options" autocomplete="off">Offenses
+            </label>
+            <label class="btn btn-info">
+                <input value="Victims" class="recordType" type="radio" name="options" autocomplete="off">Victims
+            </label>
+        </div>
 
         <div id="vis"></div>
     </body>

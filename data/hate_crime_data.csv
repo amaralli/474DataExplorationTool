@@ -1,25 +1,22 @@
-Bias motivation,Incidents,Offenses,Victims,"Known
+Bias,Incidents,Offenses,Victims,"Known
 offenders",Type
 Anti-White,653,728,754,680,Race
-Anti-Black or African American,"1,856","2,263","2,371","1,747",Race
-Anti-American Indian or Alaska Native,129,146,159,108,Race
+Anti-Black,1856,2263,2371,1747,Race
+Anti-American Indian,129,146,159,108,Race
 Anti-Asian,135,158,164,130,Race
-Anti-Native Hawaiian or Other Pacific Islander,3,3,3,7,Race
-"Anti-Multiple Races, Group",95,109,112,61,Race
+Anti-Pacific Islander,3,3,3,7,Race
 Anti-Jewish,625,689,737,393,Religion
 Anti-Catholic,70,74,75,72,Religion
 Anti-Protestant,35,42,47,17,Religion
 Anti-Islamic (Muslim),135,165,167,127,Religion
-Anti-Other Religion,117,135,137,44,Religion
-"Anti-Multiple Religions, Group",42,51,53,25,Religion
-Anti-Atheism/Agnosticism/etc.,7,7,7,4,Religion
+Anti-Other,117,135,137,44,Religion
+Anti-Atheism,7,7,7,4,Religion
 Anti-Gay (Male),750,849,890,975,Sexual Orientation
 Anti-Lesbian,160,185,191,174,Sexual Orientation
-"Anti-Lesbian, Gay, Bisexual, or Transgender (Mixed Group)",277,317,329,324,Sexual Orientation
 Anti-Heterosexual,21,24,24,20,Sexual Orientation
 Anti-Bisexual,25,27,27,21,Sexual Orientation
 Anti-Hispanic or Latino,331,418,432,418,Ethnicity
-Anti-Not Hispanic or Latino3,324,376,389,325,Ethnicity
+Anti-Not Hispanic or Latino,324,376,389,325,Ethnicity
 Anti-Physical,22,23,24,23,Disability
 Anti-Mental,61,69,75,54,Disability
 Anti-Male,5,5,5,7,Sex
