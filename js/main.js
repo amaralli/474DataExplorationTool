@@ -56,7 +56,7 @@ $(function() {
 						   .attr('transform', 'translate(' + (margin.left - 40) + ',' + (margin.top + height/2) + ') rotate(-90)')
 						   .attr('class', 'title');
 
-		
+		//determines scale for axis and all points
 	    var scale = function(data) {
 			var biases = data.map(function(d) {
 				return d.Bias
@@ -64,12 +64,12 @@ $(function() {
 
 			xScale = d3.scale.ordinal().rangeBands([0, width], .1).domain(biases);
 
-			//var yMin = d3.min(data, function(d) {return +d.Offenses});
 			var yMax = d3.max(data, function(d) {return +d[recordType]});
 
 			yScale = d3.scale.linear().range([height, 0]).domain([0, yMax]);
 		}
 
+		//creates appropriate axes
 		var setAxes = function() {
 			var xAxis = d3.svg.axis()
 						  .scale(xScale)
@@ -88,6 +88,7 @@ $(function() {
 	    	yAxisText.text('Number of ' + recordType);
 		}
 
+		//filters data upon new selection of data dimensions
 		var adjustData = function() {
 			currentData = allData.filter(function(d) {
 				return d.Type == biasType;
@@ -99,8 +100,7 @@ $(function() {
 			})
 		}
 
-
-
+		//actually creates the graphical rendition of data
 		var draw = function(data) {
 			scale(data);
 
@@ -142,6 +142,8 @@ $(function() {
 	    		.style('fill', '#18c3bd');
 		};
 
+		//changes the graphic upon selection of button that determines
+		//new dimensions of data
 		$("input").on('change', function() {
 			var val = $(this).val();
 			if($(this).hasClass('biasType')) {
@@ -154,6 +156,7 @@ $(function() {
 			draw(currentData);
 		})
 
+		//initial drawing of graphic
 		adjustData();
 		draw(currentData);
 			
