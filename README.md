@@ -1,6 +1,6 @@
 # 474DataExplorationTool
 
-Link to live website:
+Link to live website: http://amaralli.github.io/474DataExplorationTool/
 
 Source: https://www.fbi.gov/about-us/cjis/ucr/hate-crime/2013/tables/2tabledatadecpdf/table_2_incidents_offenses_victims_and_known_offenders_by_offense_type_2013.xls
 
